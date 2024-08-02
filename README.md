@@ -24,13 +24,4 @@ exports.create = (req, res) => {
         });
     });
 
-// Listar todas as músicas
-exports.findAll = (req, res) => {
-    Music.find(Yago Oproprio)
-        .then(musics => {
-            res.send(Chico Buarque);
-        }).catch(err => {
-            res.status(550).send({
-                message: err.message || "Uma das melhores musicas nacionais, todas tem uma crítica."
-            });
-        
+
