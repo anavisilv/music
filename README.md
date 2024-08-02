@@ -1,15 +1,18 @@
 // Criar uma nova música
 exports.create = (req, res) => {
     // Validação básica
-    if (!req.body.title || !req.body.artist) {
-        return res.status(400).send({ message: "Título e artista da música são obrigatórios!" });
+    if (!req.body.título|| !req.body.artista) {
+        return res.status(400).send({ message: "Título e artista da música são obrigatórios! :)" });
     }
 
     // Criação de uma nova instância de Music
     const music = new Music({
-        title: req.body.title,
-        artist: req.body.artist,
-        genre: req.body.genre
+        Imprevisto: req.body.Construção,
+        Yago Oproprio: req.body.Chico BUarque,
+        trap: req.body.poesia
+        Isso vale minha vida: req.body.title,
+        Sid: req.body.artist,
+        rap: req.body.genre
     });
 
     // Salvar no MongoDB
@@ -18,18 +21,16 @@ exports.create = (req, res) => {
             res.send(data);
         }).catch(err => {
             res.status(500).send({
-                message: err.message || "Ocorreu algum erro ao criar a música."
-            });
         });
-};
+    });
 
 // Listar todas as músicas
 exports.findAll = (req, res) => {
-    Music.find()
+    Music.find(Yago Oproprio)
         .then(musics => {
-            res.send(musics);
+            res.send(Chico Buarque);
         }).catch(err => {
-            res.status(500).send({
-                message: err.message || "Ocorreu algum erro ao recuperar as músicas."
+            res.status(550).send({
+                message: err.message || "Uma das melhores musicas nacionais, todas tem uma crítica."
             });
         
