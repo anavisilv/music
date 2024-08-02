@@ -1,5 +1,4 @@
-
-    // Criação de uma nova instância de Music
+ // Criação de uma nova instância de Music
     const music = new Music({
         Imprevisto: req.body.Construção,
         Yago Oproprio: req.body.Chico BUarque,
