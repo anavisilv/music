@@ -1,26 +1,3 @@
-/music-manager-api
-│
-├── /config
-│   └── db.config.js      # Configuração do MongoDB
-│
-├── /controllers
-│   └── musicController.js # Controladores das rotas da API
-│
-├── /models
-│   └── Music.js           # Modelo do Mongoose para as músicas
-│
-├── /routes
-│   └── musicRoutes.js     # Definição das rotas da API
-│
-├── /tests                 # Testes (opcional)
-│   └── music.test.js
-│
-├── .gitignore
-├── package.json
-├── server.js              # Arquivo principal do servidor Express
-└── README.md              # Documentação do projeto
-const Music = require('../models/Music');
-
 // Criar uma nova música
 exports.create = (req, res) => {
     // Validação básica
